@@ -7,7 +7,6 @@ export default function SearchEngine(){
     let [results, setResults] = useState(null);
 
     function handleResponse(response){
-        console.log(response.data[0]);
         setResults(response.data[0]);
     }
 
@@ -15,7 +14,7 @@ export default function SearchEngine(){
         event.preventDefault();
         
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
-        axios.getUri(apiUrl).then(handleResponse);
+        axios.get(apiUrl).then(handleResponse);
     }
 
     function handleKeywordChange(event) {
