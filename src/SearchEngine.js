@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Results from "./Results";
 import axios from "axios";
+import "./SearchEngine.css";
 
 export default function SearchEngine(){
     let [keyword, setKeyword] = useState("");
@@ -24,7 +25,7 @@ export default function SearchEngine(){
     return (
         <div className="SearchEngine">
             <form onSubmit={search}>
-                <input type="search" onChange={handleKeywordChange} />
+                <input className="searching-bar" type="search" onChange={handleKeywordChange} />
                 <Results results={results} />
             </form>
         </div>

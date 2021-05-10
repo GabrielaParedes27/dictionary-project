@@ -1,4 +1,4 @@
-
+import logo from "./logo.png";
 import './App.css';
 import SearchEngine from "./SearchEngine";
 
@@ -6,7 +6,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Dictionary</h1>
+        <img src={logo} className="dictionary-logo" alt="logo" />
+        <h3>What word are you looking for?</h3>
       </header>
     <SearchEngine />
     </div>
