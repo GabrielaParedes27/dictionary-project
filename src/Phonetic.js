@@ -1,4 +1,5 @@
 import React from "react";
+import "./Phonetics.css";
 
 export default function Phonetic(props) {
     return (
@@ -6,7 +7,6 @@ export default function Phonetic(props) {
             <a href={props.phonetic.audio} target="blank">
                 Listen
             </a>
-            <br />
             {props.phonetic.text}
         </div>
     );
