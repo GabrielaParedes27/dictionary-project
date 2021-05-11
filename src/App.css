@@ -1,5 +1,7 @@
 .App {
   font-family: "Quicksand", sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .App-header {

@@ -9,7 +9,7 @@ function App() {
         <img src={logo} className="dictionary-logo" alt="logo" />
         <h3>What word are you looking for?</h3>
       </header>
-    <SearchEngine defaultKeyword="Serendipity" />
+    <SearchEngine defaultKeyword="sunflower" />
     <footer>
       Open-source on <a href="https://github.com/GabrielaParedes27/dictionary-project.git"
       target="blank">GitHub</a> by <a href="https://www.linkedin.com/in/gabriela-paredes-314333180/"
