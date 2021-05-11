@@ -36,7 +36,7 @@ export default function SearchEngine(props){
     return (
         <div className="SearchEngine">
             <form onSubmit={handleSubmit}>
-                <input type="search" onChange={handleKeywordChange} defaultValue="Search for a word (try: wine, plant, yoga)" />
+                <input type="search" onChange={handleKeywordChange} placeholder="Search for a word (try: wine, plant, yoga)" />
                 <Results results={results} />
             </form>
         </div>
