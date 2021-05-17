@@ -4,7 +4,7 @@ import SearchEngine from "./SearchEngine";
 
 function App() {
   return (
-    <container maxWidth="sm">
+    
     <div className="App">
       
       <header className="App-header">
@@ -18,7 +18,7 @@ function App() {
       target="blank">Gabriela Paredes</a>
     </footer>
     </div>
-    </container>
+    
   );
 }
 

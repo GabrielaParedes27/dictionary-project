@@ -1,6 +1,8 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   font-family: "Quicksand", sans-serif;
-  max-width: 960px;
   margin: 0 auto;
 }
 
