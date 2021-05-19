@@ -4,11 +4,12 @@ import "./Photos.css";
 export default function Photos(props) {
     if (props.photos) {
         return (
+            <div className="container">
             <section className="Photos">
                 <div className="row">
                     {props.photos.map(function (photo, index) {
                         return (
-                            <div className="col-4" key={index}>
+                            <div className="col-sm-4" key={index}>
                                 <a href={photo.src.original} target="blank" rel="noreferrer">
                                     <img src={photo.src.landscape} className="img-fluid" alt=" " />
                                 </a>
@@ -17,6 +18,7 @@ export default function Photos(props) {
                     })}
                 </div>
             </section>
+            </div>
         );
     } else {
         return null;
